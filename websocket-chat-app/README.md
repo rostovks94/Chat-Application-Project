@@ -1,50 +1,105 @@
-# React + TypeScript + Vite
+# WebSocket Chat Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This project is a real-time chat application built using WebSocket technology, React on the frontend, and Flask on the backend. It enables users to join chat rooms and exchange messages in real-time.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- WebSocket connection between the client and server for real-time messaging.
+- A minimalist and responsive UI built with React.
+- Chat messages are stored in `localStorage`.
+- Usernames and timestamps are displayed for each message.
+- The chat interface allows message sending and basic chat room functionality.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Project Structure
 
-- Configure the top-level `parserOptions` property like this:
+- **`backend/`**: Contains the Flask server that handles WebSocket communication.
+- **`frontend/app/`**: Contains the React frontend that connects to the WebSocket server.
+  
+## Prerequisites
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- Node.js (for frontend)
+- Python 3.x (for backend)
+- Git
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Setup Instructions
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### 1. Clone the Repository
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+```bash
+git clone https://github.com/your-repo/websocket-chat-app.git
+cd websocket-chat-app
+
+### 2. Backend Setup (Flask)
+
+	1.	Navigate to the backend/ folder:
+      cd backend
+
+  2.	Create and activate a virtual environment:
+      python3 -m venv venv
+      source venv/bin/activate
+
+  3.	Install the required Python packages:
+      pip install -r requirements.txt
+
+	4.	Run the Flask server:
+      python app.py
+
+The backend will now be running on http://127.0.0.1:5000.
+
+### 3. Frontend Setup (React)
+
+	1.	Navigate to the frontend/app/ folder:
+      cd ../frontend/app
+
+	2.	Install the necessary npm packages:
+      npm install
+
+	3.	Start the development server:
+      npm run dev
+
+The frontend will be running on http://localhost:5173.
+
+Usage
+
+	1.	Open your browser and navigate to http://localhost:5173.
+	2.	Enter your username and message to participate in the chat.
+	3.	Messages will be displayed in real-time with timestamps.
+
+Technologies Used
+
+	•	Frontend: React, TypeScript, CSS
+	•	Backend: Flask, Flask-SocketIO
+	•	WebSocket Communication: socket.io
+
+websocket-chat-app/
+│
+├── backend/
+│   ├── venv/
+│   ├── app.py
+│   ├── requirements.txt
+│
+├── frontend/
+│   ├── app/
+│   │   ├── public/
+│   │   ├── src/
+│   │   │   ├── assets/
+│   │   │   │   └── react.svg
+│   │   │   ├── components/
+│   │   │   │   ├── ChatBody.tsx
+│   │   │   │   ├── MessageInput.tsx
+│   │   │   ├── App.tsx
+│   │   │   ├── App.css
+│   │   │   ├── index.css
+│   │   │   ├── main.tsx
+│   │   │   ├── socket.ts
+│   │   │   ├── styles.css
+│   │   │   ├── vite-env.d.ts
+│   │   ├── .gitignore
+│   │   ├── index.html
+│   │   ├── package.json
+│   │   └── vite.config.ts
+│
+├── .gitignore 
+└── README.md 
