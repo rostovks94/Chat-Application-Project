@@ -81,18 +81,18 @@ https://chat-application-project-3wiq0q7oz-rostovks94s-projects.vercel.app
 ```bash
 /websocket-chat-app
 ├── backend
-│   ├── app.py              # Flask-SocketIO backend
-│   └── requirements.txt     # Python dependencies
+│   ├── app.py              
+│   └── requirements.txt     
 ├── frontend/app
 │   ├── src
 │   │   ├── components
-│   │   │   ├── ChatBody.tsx     # Component for displaying chat messages
-│   │   │   └── MessageInput.tsx # Component for sending messages
-│   │   ├── App.tsx              # Main app component
-│   │   └── main.tsx             # Entry point
+│   │   │   ├── ChatBody.tsx     
+│   │   │   └── MessageInput.tsx 
+│   │   ├── App.tsx              
+│   │   └── main.tsx             
 │   ├── public
-│   │   └── index.html           # HTML template
-│   └── package.json             # Frontend dependencies
+│   │   └── index.html          
+│   └── package.json            
 └── README.md
 ```
 
