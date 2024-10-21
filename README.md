@@ -33,12 +33,12 @@ This is a real-time chat application built using Flask-SocketIO for the backend 
    ```bash
    python -m venv venv
    venv\Scripts\activate
-
+   ```
    On macOS/Linux:
    ```bash
    python3 -m venv venv
    source venv/bin/activate
-
+   ```
 3. **Install the dependencies**:
    
    ```bash
@@ -94,7 +94,7 @@ https://chat-application-project-3wiq0q7oz-rostovks94s-projects.vercel.app
 │   │   └── index.html           # HTML template
 │   └── package.json             # Frontend dependencies
 └── README.md
-
+```
 
 ### Conclusion
 This real-time chat application demonstrates the use of Flask-SocketIO for backend WebSocket communication and React with TypeScript for the frontend. The project was developed as part of the Coding Temple bootcamp and is designed to showcase full-stack web development skills.
