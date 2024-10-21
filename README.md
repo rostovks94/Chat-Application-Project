@@ -32,14 +32,69 @@ This is a real-time chat application built using Flask-SocketIO for the backend 
    On Windows:
    ```bash
    python -m venv venv
-   venv\Scripts\activate```
+   venv\Scripts\activate
 
    On macOS/Linux:
    ```bash
    python3 -m venv venv
-   source venv/bin/activate```
+   source venv/bin/activate
 
 3. **Install the dependencies**:
    
    ```bash
-   pip install -r requirements.txt```
+   pip install -r requirements.txt
+
+4. **Run the backend server**:
+   
+   ```bash
+   python app.py
+
+The server will start on http://127.0.0.1:5000.
+
+### Frontend (React)
+
+1. **Navigate to the frontend directory**:
+
+   ```bash
+   cd ../frontend/app
+
+2. **Install the dependencies**:
+
+   ```bash
+   npm install
+
+3. **Run the development server**:
+   
+   ```bash
+   npm run dev
+
+The frontend will run on http://localhost:3000.  
+
+Through Vercel:
+The frontend of the application is deployed on Vercel. You can access it via the following link:
+
+https://chat-application-project-3wiq0q7oz-rostovks94s-projects.vercel.app
+
+
+### Project Structure
+
+```bash
+/websocket-chat-app
+├── backend
+│   ├── app.py              # Flask-SocketIO backend
+│   └── requirements.txt     # Python dependencies
+├── frontend/app
+│   ├── src
+│   │   ├── components
+│   │   │   ├── ChatBody.tsx     # Component for displaying chat messages
+│   │   │   └── MessageInput.tsx # Component for sending messages
+│   │   ├── App.tsx              # Main app component
+│   │   └── main.tsx             # Entry point
+│   ├── public
+│   │   └── index.html           # HTML template
+│   └── package.json             # Frontend dependencies
+└── README.md
+
+
+### Conclusion
+This real-time chat application demonstrates the use of Flask-SocketIO for backend WebSocket communication and React with TypeScript for the frontend. The project was developed as part of the Coding Temple bootcamp and is designed to showcase full-stack web development skills.
