@@ -98,3 +98,5 @@ https://chat-application-project-3wiq0q7oz-rostovks94s-projects.vercel.app
 
 ### Conclusion
 This real-time chat application demonstrates the use of Flask-SocketIO for backend WebSocket communication and React with TypeScript for the frontend. The project was developed as part of the Coding Temple bootcamp and is designed to showcase full-stack web development skills.
+
+Feel free to reach out if you have any questions or suggestions.
