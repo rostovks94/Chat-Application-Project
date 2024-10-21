@@ -1,7 +1,7 @@
 # WebSocket Chat Application
 
 ## Overview
-This is a real-time chat application built using Flask-SocketIO for the backend and React with TypeScript for the frontend. The project supports real-time communication via WebSockets, allowing users to send and receive messages in a chatroom in real-time. The application was developed as part of the bootcamp program at **Coding Temple**, showcasing my practical skills in both front-end and back-end development.
+This is a real-time chat application built using Flask-SocketIO for the backend and React with TypeScript for the frontend. The project supports real-time communication via WebSockets, allowing users to send and receive messages in a chatroom in real-time. The application was developed as a homework assignment during the bootcamp program at **Coding Temple**, showcasing my practical skills in both front-end and back-end development.
 
 ## Features
 - **Real-Time Messaging**: Allows users to send and receive messages instantly using WebSocket technology.
