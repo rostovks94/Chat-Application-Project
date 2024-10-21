@@ -32,5 +32,5 @@ This is a real-time chat application built using Flask-SocketIO for the backend 
    On Windows:
    ```bash
    python -m venv venv
-   venv\Scripts\activate```
+   venv\Scripts\activate
   
