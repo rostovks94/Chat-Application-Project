@@ -30,7 +30,15 @@ This is a real-time chat application built using Flask-SocketIO for the backend 
 2. **Create a virtual environment and activate it**:
    
    On Windows:
-   ```bash
-   python -m venv venv
-   venv\Scripts\activate
+   ```bash python -m venv venv
+   venv\Scripts\activate```
+
+   On macOS/Linux:
   
+   ```bash python3 -m venv venv
+   source venv/bin/activate```
+
+3. **Install the dependencies**:
+   
+   ```bash
+   pip install -r requirements.txt```
