@@ -17,11 +17,9 @@ const ChatBody: React.FC = () => {
     }
 
     socket.on('chat message', (message: ChatMessage) => {
-      console.log('Received message on client:', message);  
       setMessages((prevMessages) => {
         const updatedMessages = [...prevMessages, message];
-        console.log('Updated Messages:', updatedMessages); 
-        localStorage.setItem('chatMessages', JSON.stringify(updatedMessages)); 
+        localStorage.setItem('chatMessages', JSON.stringify(updatedMessages));
         return updatedMessages;
       });
     });

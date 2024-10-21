@@ -8,7 +8,6 @@ const MessageInput: React.FC = () => {
   const sendMessage = () => {
     if (message.trim() && username.trim()) {
       const timestamp = new Date().toISOString();
-      console.log('Sending message:', { username, message, timestamp });  
       socket.emit('chat message', { username, message, timestamp });
       setMessage('');  
     } else {
